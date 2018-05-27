@@ -1,7 +1,7 @@
 # LEX-YACC
 lexical analyzer and syntax analyzer for the language specified
 
-[![N|Solid](https://raw.githubusercontent.com/dulajdilshan/lex-yacc/master/docs/chart.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](https://raw.githubusercontent.com/dulajdilshan/lex-yacc/master/docs/chart.png)](https://github.com/dulajdilshan/lex-yacc)
 
 
 
