@@ -1,0 +1,9 @@
+#open terminal (not inside the src folder) then run following commands to work
+
+make -f Makefile 		#to make "simple" executable file
+./simple < example1.cmin	#to run "example1.cmin" in simple
+./simple < example2.cmin	#to run "example1.cmin" in simple
+make clean			#(not needed) to clean created files with"make"
+
+#everytime you change the src files, you have to run "make -f Makefile" inorder to work with your new changes
+

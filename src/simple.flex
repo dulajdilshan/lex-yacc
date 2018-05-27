@@ -7,15 +7,16 @@ extern int line_number;
 // } 
 
 void yyerror(char *s) {
-    fprintf(stderr, "line %d: %s\n", yylineno, s);
+    fprintf(stderr, "line %d: %s\n", line_number, s);
 }  
 
 %}                                                                                          
 %option noyywrap                                                                            
  
-%%     
-"/*"(.|\n)*"*/" ;
-"/\*([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*\*+/" ;
+%%   
+
+[/][*][^*]*[*]+([^*/][^*]*[*]+)*[/] {}
+
 
 "int"               {return INT; }                       
 "else"         		{return ELSE; }                  

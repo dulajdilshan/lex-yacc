@@ -1,7 +1,7 @@
 %{                                                                                   
    #include <stdarg.h> 
    #include <stdio.h>
-   #include "simple_shared.h"                                                        
+   #include "src/simple_shared.h"                                                        
    #define YYSTYPE char *                                                            
    int yydebug=1;     
    void yyerror (char const *); 
@@ -168,6 +168,11 @@ arg-list:
 ;
 %%                                                                                   
 int main ()                                                                              
-{                                                                                    
-  yyparse ();                                                                        
+{             
+      if (yyparse ()==0){
+            printf("Valid Syntax \n");
+      }else{
+            printf("Invalid Syntax \n");
+      };                                                                       
+                                                                        
 }
