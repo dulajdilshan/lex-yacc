@@ -7,7 +7,7 @@ extern int line_number;
 // } 
 
 void yyerror(char *s) {
-    fprintf(stderr, "line %d: %s\n", line_number, s);
+    fprintf(stderr, "line %d: %s\n", line_number+1, s);
 }  
 
 %}                                                                                          
